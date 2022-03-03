@@ -1,0 +1,7 @@
+def firstChar(substr):
+    yield substr[0]
+
+string = input() 
+for substr in string.split():
+    print(next(firstChar(substr)), end='')
+
